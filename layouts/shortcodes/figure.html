@@ -1,0 +1,58 @@
+{{ if .Get "default" }}
+  {{ template "_internal/shortcodes/figure.html" . }}
+{{ else }}
+  {{ $url := urls.Parse (.Get "src") }}
+  {{ $altText := .Get "alt" }}
+  {{ $caption := .Get "caption" }}
+  {{ $href := .Get "href" }}
+  {{ $class := .Get "class" }}
+  {{ $style := .Get "style" }}
+  {{ $imageClass := "mx-auto my-0 rounded-md" }}
+  {{ if eq $style "browser"}}
+    {{ $imageClass = "border-b-4 border-l-4 border-r-4 rounded-b-sm border-neutral-300"}}
+  {{ end }}
+  <figure{{ with $class }} class="{{ . }}" {{ end }}>
+    {{ with $href }}<a href="{{ . }}">{{ end }}
+      {{ if eq $style "browser"}}
+        <div class="px-3 py-2 bg-neutral-300 rounded-t-md">
+          <span class="inline-block w-3 h-3 rounded-full bg-primary-400"></span>
+          <span class="inline-block w-3 h-3 rounded-full bg-secondary-500"></span>
+          <span class="inline-block w-3 h-3 rounded-full bg-primary-800"></span>
+        </div>
+      {{ end }}
+    <img
+      class="{{ $imageClass }}"
+      alt="{{ $altText }}"
+      {{ if findRE "^https?" $url.Scheme }}
+        src="{{ $url.String }}"
+      {{ else }}
+        {{ $resource := "" }}
+        {{ if $.Page.Resources.GetMatch ($url.String) }}
+          {{ $resource = $.Page.Resources.GetMatch ($url.String) }}
+        {{ else if resources.GetMatch ($url.String) }}
+          {{ $resource = resources.Get ($url.String) }}
+        {{ end }}
+        {{ with $resource }}
+          {{ if eq .MediaType.SubType "svg" }}
+            src="{{ .RelPermalink }}"
+          {{ else }}
+            {{ if lt .Width 660 }}
+              src="{{ .RelPermalink }}"
+            {{ else }}
+              srcset="
+              {{ (.Resize "330x").RelPermalink }} 330w,
+              {{ (.Resize "660x").RelPermalink }} 660w,
+              {{ (.Resize "1024x").RelPermalink }} 1024w,
+              {{ (.Resize "1320x").RelPermalink }} 2x"
+              src="{{ (.Resize "660x").RelPermalink }}"
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          src="{{ $url.String }}"
+        {{ end }}
+      {{ end }}
+    />
+    {{ with $href }}</a>{{ end }}
+    {{ with $caption }}<figcaption class="text-center">{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+{{ end }}
