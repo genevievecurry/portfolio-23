@@ -1,8 +1,8 @@
 ---
 title: "Resume"
-menu: "footer"
 summary: "My relevant professional work experience, summarized."
 showMeta: false
+showPagination: false
 ---
 
 ## Professional Experience

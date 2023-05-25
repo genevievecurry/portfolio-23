@@ -16,15 +16,14 @@ pageRef = "about"
 weight = 10
 
 [[main]]
-name = "Work"
-pageRef = "work"
+name = "Resume"
+pageRef = "resume"
 weight = 20
 
 [[main]]
 name = "Hobby"
 pageRef = "hobby"
 weight = 30
-
 
 [[main]]
 identifier = "search"
