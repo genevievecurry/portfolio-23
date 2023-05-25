@@ -2,18 +2,9 @@
 title: "Wordle Illustrated"
 showSummary: true
 showTaxonomies: true
-groupByYear: true
 showDate: false
 featureAlt: "A screenshot of Wordle, Illustrated photoshopped onto an AI-generated image of a dirty old laptop"
 coverCaption: "**Wordle, Illustrated** photoshopped onto an AI-generated image of a dirty old laptop"
-# grid: true
-# articleGrid: false
-
-# cascade:
-#   showDate: true
-#   showWordCount: false
-#   articleGrid: true
-#   showSummary: false
 ---
 
 [Wordle, Illustrated](https://wordle-illustrated.netlify.app/) is a little website I built to show off a collection of daily Wordle puzzles, solved by me and illustrated by Midjourney, using each of my guesses as a prompt.

@@ -11,11 +11,6 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-name = "About Me"
-pageRef = "about"
-weight = 10
-
-[[main]]
 name = "Resume"
 pageRef = "resume"
 weight = 20
@@ -35,21 +30,20 @@ action = "search"
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
+[[footer]]
+name = "GitHub"
+url = "https://github.com/genevievecurry"
+weight = 10
+[footer.params]
+icon = "github"
+showName = false
+target = "_blank"
 
-# [[footer]]
-# name = "GitHub"
-# url = "https://github.com/genevievecurry"
-# weight = 10
-# [footer.params]
-# icon = "github"
-# showName = false
-# target = "_blank"
-
-# [[footer]]
-# name = "LinkedIn"
-# url = "https://github.com/genevievecurry"
-# weight = 20
-# [footer.params]
-# icon = "linkedin"
-# showName = false
-# target = "_blank"
+[[footer]]
+name = "LinkedIn"
+url = "https://github.com/genevievecurry"
+weight = 20
+[footer.params]
+icon = "linkedin"
+showName = false
+target = "_blank"

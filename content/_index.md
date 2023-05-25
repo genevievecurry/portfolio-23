@@ -1,3 +1,1 @@
----
-title: "Index title"
----
+Hello! I'm Genevieve, a passionate full-stack software engineer with a knack for creating seamless digital experiences. Whether it's developing robust back-end systems or crafting elegant front-end interfaces, I love to bring ideas to life through code.
