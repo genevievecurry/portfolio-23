@@ -1,5 +1,5 @@
 {{- $taxo := "artTags" }}
-<div class="p-3 md:w-1/3 gallery-link shuffle-item shuffle-item--visible" 
+<div class="p-3 md:w-1/3 gallery-link" 
   data-groups="[
     {{ with .Param $taxo }}
       {{ range $index, $artTag := . }}
@@ -23,9 +23,7 @@
       {{ else }}
         srcset="
         {{- (.Resize "330x").RelPermalink }} 330w,
-        {{- (.Resize "660x").RelPermalink }} 660w,
-        {{- (.Resize "1024x").RelPermalink }} 1024w,
-        {{- (.Resize "1320x").RelPermalink }} 2x"
+        {{- (.Resize "660x").RelPermalink }} 2x"
       {{ end }}
     />
     <a

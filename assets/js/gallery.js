@@ -4,7 +4,7 @@ class GalleryList {
   constructor(element) {
     this.element = element;
     this.shuffle = new Shuffle(element, {
-        itemSelector: '.gallery-link'
+      itemSelector: '.gallery-link'
     });
 
     this.initShuffleEventListeners();
@@ -13,7 +13,11 @@ class GalleryList {
   }
 
   initShuffleEventListeners() {
-    this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {});
+    this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
+      document.querySelector('#gallery-list').classList.remove('opacity-0');
+      document.querySelector('.shuffle-load').classList.add('hidden');
+    });
+
     this.shuffle.on(Shuffle.EventType.REMOVED, (data) => {});
   }
 
@@ -26,12 +30,12 @@ class GalleryList {
     const onClick = this._handleFilterButtonClick.bind(this);
 
     filterButtons.forEach((button) => {
-        button.addEventListener('click', onClick, false);
+      button.addEventListener('click', onClick, false);
     });
   }
 
-  _handleFilterButtonClick(evt) {
-    const filterButton = evt.currentTarget;
+  _handleFilterButtonClick(event) {
+    const filterButton = event.currentTarget;
     const isActive = filterButton.classList.contains('active');
     const filterButtonGroup = filterButton.getAttribute('data-group');
 

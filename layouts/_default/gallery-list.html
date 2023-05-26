@@ -33,11 +33,17 @@
       </div>
     </div>
 
-    <section id="gallery-list" class="justify-center md:flex shuffle">
-      {{ range .Pages }}
-        {{ partial "gallery-link.html" . }}
-      {{ end }}
-    </section>
+    <div class="relative w-full">
+      <div class="absolute -translate-x-1/2 left-1/2 animate-pulse shuffle-load top-20">
+        <div>Loading...</div>
+      </div>
+
+      <section id="gallery-list" class="justify-center opacity-0 md:flex">
+        {{ range .Pages }}
+          {{ partial "gallery-link.html" . }}
+        {{ end }}
+      </section>
+    </div>
   {{ end }}
 {{ end }}
 
