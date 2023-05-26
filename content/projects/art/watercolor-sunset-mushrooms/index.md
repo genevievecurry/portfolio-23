@@ -1,0 +1,4 @@
+---
+title: "Mushrooms"
+artTags: ["watercolor"]
+---

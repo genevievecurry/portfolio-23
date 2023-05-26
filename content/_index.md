@@ -1,1 +1,1 @@
-Hello! I'm Genevieve, a passionate full-stack software engineer with a knack for creating seamless digital experiences. Whether it's developing robust back-end systems or crafting elegant front-end interfaces, I love to bring ideas to life through code.
+Hello! I'm Genevieve, a full-stack software engineer with a knack for problem soliving. Whether it's developing back-end systems or crafting front-end interfaces, I love to bring ideas to life through code.

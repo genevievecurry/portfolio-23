@@ -16,8 +16,8 @@ pageRef = "resume"
 weight = 20
 
 [[main]]
-name = "Hobby"
-pageRef = "hobby"
+name = "Projects"
+pageRef = "projects"
 weight = 30
 
 [[main]]
@@ -41,7 +41,7 @@ target = "_blank"
 
 [[footer]]
 name = "LinkedIn"
-url = "https://github.com/genevievecurry"
+url = "https://www.linkedin.com/in/genevieve-curry/"
 weight = 20
 [footer.params]
 icon = "linkedin"
