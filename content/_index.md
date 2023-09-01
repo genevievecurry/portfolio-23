@@ -1,1 +1,6 @@
-Hello! I'm Genevieve, a full-stack software engineer with a knack for problem soliving. Whether it's developing back-end systems or crafting front-end interfaces, I love to bring ideas to life through code.
+**I am a technology-forward generalist.**
+
+- I love working with people to understand their needs and build solutions.
+- I am passionate about learning new things and sharing knowledge.
+- Finding creative solutions to problems is my favorite part of the day.
+- Building software isn't always the answer, but I'm there for it when it is.
