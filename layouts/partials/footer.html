@@ -1,7 +1,7 @@
-<footer class="py-4 mt-10 border-t lg:py-8 print:hidden">
+<footer class="py-4 mt-10 lg:py-8 print:hidden" style="background-color: #e7dfff">
   {{/* Footer menu */}}
   {{ if .Site.Menus.footer }}
-    <nav class="px-4 mb-6 text-base font-medium lg:px-16 text-neutral-500 dark:text-neutral-400">
+    <nav class="px-4 mb-6 text-base font-medium lg:px-16 text-neutral-900">
       <ul class="flex flex-col list-none sm:flex-row">
         {{ range .Site.Menus.footer }}
           <li class="mb-1 group ltr:text-right rtl:text-left sm:mb-0 sm:me-7 sm:last:me-0">
@@ -74,7 +74,7 @@
     <div>
       {{/* Copyright */}}
       {{ if .Site.Params.footer.showCopyright | default true }}
-        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+        <p class="text-sm text-neutral-900">
           {{- with .Site.Params.copyright }}
             {{ . | emojify | markdownify }}
           {{- else }}
@@ -86,7 +86,7 @@
       {{ end }}
       {{/* Theme attribution */}}
       {{ if .Site.Params.footer.showThemeAttribution | default true }}
-        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        <p class="text-xs text-neutral-900">
           {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
             href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
           }}
@@ -100,7 +100,7 @@
       <div
         class="{{ if .Site.Params.footer.showScrollToTop | default true -}}
           me-14
-        {{- end }} cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        {{- end }} cursor-pointer text-sm text-neutral-900 hover:text-primary-600"
       >
         <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
           <div

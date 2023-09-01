@@ -2017,6 +2017,14 @@ body:has(#menu-controller:checked) {
   max-width: 65ch;
 }
 
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -2277,6 +2285,11 @@ body:has(#menu-controller:checked) {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-\[\#54ffbd\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 255 189 / var(--tw-bg-opacity));
 }
 
 .object-scale-down {
@@ -2556,6 +2569,11 @@ body:has(#menu-controller:checked) {
 .text-primary-700 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-700), var(--tw-text-opacity));
+}
+
+.text-neutral {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral), var(--tw-text-opacity));
 }
 
 .\!no-underline {
