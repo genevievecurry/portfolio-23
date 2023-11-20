@@ -11,7 +11,7 @@ showPagination: false
 
 [Orbit](https://orbit.love/) is a SAAS community growth platform that leverages integrations to surface data.
 
-**Senior Software Engineer, 2022 - 2023**
+**Software Engineer, 2022 - 2023**
 
 - Improved important SQL queries used for filtering across multiple tables, reducing execution time by up to 90% for large datasets.
 - Collaborated with a fully remote team across 10 timezones to plan, execute, test and deploy features, improvements, and bug fixes.
