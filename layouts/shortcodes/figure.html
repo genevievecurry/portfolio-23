@@ -10,6 +10,7 @@
   {{ $imageClass := "mx-auto my-0 rounded-md" }}
   {{ if eq $style "browser"}}
     {{ $imageClass = "border-b-4 border-l-4 border-r-4 rounded-b-sm border-neutral-300"}}
+    {{ $class = "max-w-max" }}
   {{ end }}
   <figure{{ with $class }} class="{{ . }}" {{ end }}>
     {{ with $href }}<a href="{{ . }}">{{ end }}

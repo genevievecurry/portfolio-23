@@ -5,4 +5,4 @@ cascade:
   showDate: false
 ---
 
-This is a collection of personal projects I've created simply to amuse or educate myself.
+This is a collection of projects I've created; mainly personal ones intended to amuse or educate myself.

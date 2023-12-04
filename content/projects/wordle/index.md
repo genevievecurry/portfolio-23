@@ -15,7 +15,9 @@ Visit Wordle, Illustrated
 
 ## Why?
 
-As an artist, engaging with tools like Midjourney or DALL-E is a way for me enjoy the interactive act of creativity, even when my hands aren't in the mood to grip a pencil or paintbrush. Additionally, I already do the Wordle puzzle most days, so including the ritual of sending my guesses to Midjourney as a prompt just adds a bit more fun to it. And why not share them?
+As an artist, engaging with tools like Midjourney or DALL-E is a way for me enjoy the interactive act of creativity, even when my hands aren't in the mood to grip a pencil or paintbrush. Additionally, I was doing the Wordle puzzle most days, so including the ritual of sending my guesses to Midjourney as a prompt just added a bit more fun to it. And why not share them?
+
+I've lost interest in the project for now, but you can still see the results of the puzzles I solved.
 
 ## Building it
 

@@ -38,10 +38,6 @@ The repository is public if you want to take a look at it: [genevievecurry/paint
 
 Building this project was a thinly veiled excuse to play with [Svelte](https://svelte.dev/), [SvelteKit](https://kit.svelte.dev/), and [Prisma](https://www.prisma.io/). At the time, SvelteKit was pre-1.0, and since I was full of excitement and working on it regularly, I was able to keep up with the rapidly evolving project (and the breaking changes that came along).
 
-After setting aside development for a few months, I was something like 200 releases behind, and realized I had made a terrible error by not staying on top of things. I had been contacted by someone who was interested in partnering up with me to work on the content side of things on the website, and felt motivated to get the "community" aspect of the website going, but I ran into some serious issues that are just endemic to the breakneck speed that the JavaScript/Node ecosystem moves that made it harder to add OpenTelemetry and some other tools that would help me see how the app was working with actual users.
-
-I REALLY enjoyed building the app, and using Svelte to do it. I built features as they occurred to me, used technology I was curious about, and totally skipped adding a test suite. It's not the way I would do things in a business context, but that's what side projects are for, right? :smile:
-
 ## Functionality
 
 - Postgres database
@@ -68,3 +64,31 @@ I REALLY enjoyed building the app, and using Svelte to do it. I built features a
     >}}
 
 Each paint page includes uploaded swatches, the individual pigments used to create the paint, its lightfastness, transparency, staining and granulation ratings, and a manufacturer description. Not all manufacturers readily share this information, so the library isn't totally complete. Pages also include a space for a community description and artists notes (which are essentially moderated comments).
+
+## Updates
+
+### Fall 2022 Update
+
+After setting aside development for a few months, I was something like 200 releases behind, and realized I had made a terrible error by not staying on top of things. I had been contacted by someone who was interested in partnering up with me to work on the content side of things on the website, and felt motivated to get the "community" aspect of the website going, but I ran into some serious issues that are just endemic to the breakneck speed that the JavaScript/Node ecosystem moves that made it harder to add OpenTelemetry and some other tools that would help me see how the app was working with actual users.
+
+I REALLY enjoyed building the app, and using Svelte to do it. I built features as they occurred to me, used technology I was curious about, and totally skipped adding a test suite. It's not the way I would do things in a business context, but that's what side projects are for, right?
+
+So, for now, Paint Library is on hold.
+
+### Spring 2023 Update
+
+Using my abandoned Svelte version of Paint Library as a template, I started rebuilding the static aspects of it in Next.js, hoping to learn more about the framework and how to use it with TypeScript, especially given its recent popularity. I was able to use the original PostgresQL database from V1 and a lot of the same code, which made things go pretty quickly.
+
+Ultimately, I decided that Next.js is not a framework I wanted to continue using, for a variety of reasons. I imagine there are some business contexts that might make sense for it, but it would not be at the top of my list for new projects if I were tasked with making a recommendation.
+
+You can check out the [Next.js iteration of Paint Library](https://paint-library-next.vercel.app/), hosted on Vercel (of course), if you're curious! It's VERY slow to navigate, the diagnosis of which is one of the friction points I could cite as part of my hesitation with the framework. Besides, side projects should be fun, right? JavaScript can be very fun to write, but Next.js made it kind of... well... un-fun.
+
+### Winter 2023 Update
+
+In the true spirit of side projects with mysterious sources of motivation driving them, I started working on a third iteration of the library. Why? Who knows!
+
+This iteration is a 180&deg; turn, framework-wise. It is built using Elixir and Phoenix LiveView, and is hosted on Fly.io. Because I wanted the database structure to better align with Ecto (a very SQL-forward ORM for Elixir), I wrote parsers to import data via CSV exports from the original PostgresQL database, after setting up migrations and schemas in the new app.
+
+I think Elixir is the winner here, and I'm excited to continue working on this version of the library. I think Ruby on Rails would also have been a good choice, with many of the same benefits.
+
+You can see the project as I develop it at [paintlib.fly.dev](https://paintlib.fly.dev/), with the warning that anything could be broken at any time. Be sure to play with the theme switcher in the header and the [pigment filters](https://paintlib.fly.dev/pigments)!

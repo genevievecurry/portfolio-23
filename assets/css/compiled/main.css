@@ -1670,6 +1670,10 @@ body:has(#menu-controller:checked) {
   visibility: hidden;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1841,10 +1845,6 @@ body:has(#menu-controller:checked) {
   margin-left: 0.5rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -1865,6 +1865,10 @@ body:has(#menu-controller:checked) {
   margin-top: 3rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1875,10 +1879,6 @@ body:has(#menu-controller:checked) {
 
 .mt-\[0\.1rem\] {
   margin-top: 0.1rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -2013,6 +2013,11 @@ body:has(#menu-controller:checked) {
   max-width: 100%;
 }
 
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 .max-w-prose {
   max-width: 65ch;
 }
@@ -2085,10 +2090,6 @@ body:has(#menu-controller:checked) {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-start {
@@ -2182,10 +2183,6 @@ body:has(#menu-controller:checked) {
   border-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-4 {
   border-bottom-width: 4px;
 }
@@ -2224,6 +2221,11 @@ body:has(#menu-controller:checked) {
 .border-primary-400 {
   --tw-border-opacity: 1;
   border-color: rgba(var(--color-primary-400), var(--tw-border-opacity));
+}
+
+.bg-\[\#54ffbd\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 255 189 / var(--tw-bg-opacity));
 }
 
 .bg-neutral {
@@ -2285,11 +2287,6 @@ body:has(#menu-controller:checked) {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-\[\#54ffbd\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(84 255 189 / var(--tw-bg-opacity));
 }
 
 .object-scale-down {
@@ -2569,11 +2566,6 @@ body:has(#menu-controller:checked) {
 .text-primary-700 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-700), var(--tw-text-opacity));
-}
-
-.text-neutral {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral), var(--tw-text-opacity));
 }
 
 .\!no-underline {
