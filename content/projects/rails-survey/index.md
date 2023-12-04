@@ -7,7 +7,7 @@ featureAlt: ""
 coverCaption: ""
 ---
 
-The [2020 Ruby on Rails Community Survey Results](https://rails-hosting.com/2020/) is a project I built to display the results of a survey that a company I worked for, [Planet Argon](https://www.planetargon.com/), conducted in 2020, as part of a series of surveys conducted over the past decade.
+This is a project I built to communicate the results of a survey that a company I worked for conducted in 2020, as part of a series of surveys conducted over the past decade.
 
 The survey was sent to the Ruby on Rails community, and asked them questions about how they host, deploy, build, and maintain their Rails applications.
 
@@ -55,7 +55,7 @@ It's a methodology that emphasizes pre-built markup, decoupling the frontend fro
 
 I chose [Gatsby](https://www.gatsbyjs.com/). Gatsby is based on React, which is a framework that comes with its share of upsides and downsides. The upsides are that it is very popular, developers at my company were familiar with it, and for a JavaScript framework, it had hit a point of maturity that it was not suffering from the high churn rate that has led to significant frustration in the JavaScript community. The main downside of React is its inherent complexity, which I believe is often downplayed.
 
-One might wonder why I did not choose to use a Ruby-based static site generator, such as Jekyll or Middleman, since Planet Argon is a Rails shop. I am sure that they would have been fine choices, but I wanted to use Nivo (more about that later), and Nivo is a React library, so it made sense to use a React-based static site generator for consistency.
+One might wonder why I did not choose to use a Ruby-based static site generator, such as Jekyll or Middleman, since [Planet Argon](https://www.planetargon.com/) is a Rails shop. I am sure that they would have been fine choices, but I wanted to use Nivo (more about that later), and Nivo is a React library, so it made sense to use a React-based static site generator for consistency.
 
 #### Choosing a headless CMS
 

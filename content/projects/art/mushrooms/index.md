@@ -1,4 +1,4 @@
 ---
-title: "Sunset Mushrooms"
+title: "Mushrooms"
 artTags: ["watercolor"]
 ---

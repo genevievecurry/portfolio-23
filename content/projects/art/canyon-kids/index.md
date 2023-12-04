@@ -1,4 +1,4 @@
 ---
-title: "Sunset Mushrooms"
+title: "Canyon Kids"
 artTags: ["watercolor"]
 ---
