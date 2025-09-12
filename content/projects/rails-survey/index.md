@@ -1,5 +1,5 @@
 ---
-title: "Ruby on Rails Community Survey Results"
+title: "Ruby on Rails Community Survey Results - 2020"
 showSummary: true
 showTaxonomies: true
 showDate: false
@@ -19,7 +19,7 @@ Visit Ruby on Rails Survey Results
 
 The essential goals of the project were to use survey data to tell a story that is:
 
-- True to the data
+- True to the data!
 - Interesting
 - Easily understood
 - Valuable to community members
